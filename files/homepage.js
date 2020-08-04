@@ -13546,7 +13546,7 @@ var defaultStyles = {
     weight: 400,
     color: "black",
     leading: getFontSize(),
-    family: "FoundersGrotesk, Helvetica Neue, sans-serif",
+    family: "akzidenz-grotesk, Helvetica Neue, sans-serif",
     margin: {
         top: 5,
         left: 10,

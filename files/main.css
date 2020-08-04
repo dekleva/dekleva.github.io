@@ -1,4 +1,6 @@
 
+
+
 /************************************/
 /********** TOP NAVIGATION **********/
 /************************************/
@@ -850,23 +852,13 @@ html, body, a, * {
 
 
 @font-face {
-  font-family: 'FoundersGrotesk';
-	src:	url('FoundersGrotesk-Regular.woff2') format('woff2'),
-				url('FoundersGrotesk-Regular.woff') format('woff')
-}
+    font-family: 'akzidenz-grotesk';
+    src: url('/files/ak_gro_reg-webfont.woff2') format('woff2'),
+         url('/files/ak_gro_reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-@font-face {
-  font-family: 'FoundersGrotesk';
-	src: 	url('FoundersGrotesk-RegularItalic.woff2') format('woff2'),
-				url('FoundersGrotesk-Regular.woff') format('woff')
-	font-style: italic;
 }
-
-@font-face {
-  font-family: 'NewDings';
-		src: url('NewDings.woff') format('woff');
-}
-
 
 /***************************************/
 /********** GLOBAL TYPOGRAPHY **********/
@@ -874,7 +866,7 @@ html, body, a, * {
 
 
 body {
-	font-family: "FoundersGrotesk", "Helvetica Neue", sans-serif;
+	font-family: "akzidenz-grotesk", "Helvetica Neue", sans-serif;
 	font-size: 6vw;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -1262,7 +1254,7 @@ a:hover {
 }
 .page.project h1 {
     font-size: 50px;
-    font-family: ObjectSans;
+    font-family: akzidenz-grotesk;
     text-align: left!important;
     color: #000;
     letter-spacing: 0;
