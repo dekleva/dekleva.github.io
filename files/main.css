@@ -238,6 +238,9 @@ canvas {
 	text-align: center;
 	top: 50%;
 	transform: translateY(-50%);
+	text-transform: uppercase;
+	text-shadow: 0px 10px 40px #222;
+	
 }
 
 .box__work_label_black {
@@ -852,9 +855,9 @@ html, body, a, * {
 
 
 @font-face {
-    font-family: 'akzidenz-grotesk';
-    src: url('/files/ak_gro_reg-webfont.woff2') format('woff2'),
-         url('/files/ak_gro_reg-webfont.woff') format('woff');
+    font-family: 'international';
+    src: url('/files/nb_international.woff2') format('woff'),
+         url('/files/nb_international.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 
@@ -866,7 +869,7 @@ html, body, a, * {
 
 
 body {
-	font-family: "akzidenz-grotesk", "Helvetica Neue", sans-serif;
+	font-family: "international", "Helvetica Neue", sans-serif;
 	font-size: 6vw;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -1254,7 +1257,8 @@ a:hover {
 }
 .page.project h1 {
     font-size: 50px;
-    font-family: akzidenz-grotesk;
+	font-family: international;
+	text-transform: uppercase;
     text-align: left!important;
     color: #000;
     letter-spacing: 0;
