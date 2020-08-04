@@ -239,7 +239,7 @@ canvas {
 	top: 50%;
 	transform: translateY(-50%);
 	text-transform: uppercase;
-	text-shadow: 0px 10px 40px #222;
+	text-shadow: 0px 0px 40px #222;
 	
 }
 
