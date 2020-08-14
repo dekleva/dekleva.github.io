@@ -21,6 +21,7 @@ header {
 
 #nav__container {
 	display: flex;
+	font-family: 'akzidenz_ex_bold';
 	justify-content: space-between;
 	width: 98%;
 	padding-right: 1%;
@@ -38,6 +39,11 @@ a#nav__button_home a:hover {
 	font-style: italic;
 }
 
+b {
+	font-family: 'akzidenz_ex_bold';
+	font-weight: bold;
+
+}
 
 
 .nav__fixed_hidden {
@@ -284,6 +290,11 @@ canvas {
 .credits__list li {
 	display: inline-block;
 }
+
+ul.a {
+	list-style-type: circle;
+	padding-left: 30px;
+  }
 
 .credits__list:after {
     content: '';
@@ -839,15 +850,6 @@ body {
 	background-color: #F1ECE8;
 }
 
-/*****************************/
-/********** CURSORS **********/
-/*****************************/
-
-html, body, a, * {
-	cursor: url("../img/new_cursor.svg") 10 10, pointer;
-  cursor: url("../img/new_cursor.svg") 10 10, pointer;
-  cursor: -webkit-image-set(url("../img/new_cursor.svg") 1x, url("../img/new_cursor@2x.svg") 2x) 0 0, pointer;
-}
 
 /***************************/
 /********** FONTS **********/
@@ -855,10 +857,19 @@ html, body, a, * {
 
 
 @font-face {
-    font-family: 'international';
-    src: url('/files/nb_international.woff2') format('woff'),
-         url('/files/nb_international.ttf') format('ttf');
+    font-family: 'akzidenz_ex_rg';
+    src: url('/files/akzidenz_grotesk_pro_ext_regular-webfont.woff') format('woff'),
+         url('/files/akzidenz_grotesk_pro_ext_regular-webfont.woff2') format('woff2');
     font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'akzidenz_ex_bold';
+    src: url('/files/akzidenz_grotesk_pro_med_ext_regular-webfont.woff') format('woff'),
+         url('/files/akzidenz_grotesk_pro_med_ext_regular-webfont.woff2') format('woff2');
+    font-weight: bold;
     font-style: normal;
 
 }
@@ -869,36 +880,23 @@ html, body, a, * {
 
 
 body {
-	font-family: "international", "Helvetica Neue", sans-serif;
+	font-family: "akzidenz_ex_rg", "Helvetica Neue", sans-serif;
 	font-size: 6vw;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	vertical-align: text-bottom;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 900px) {
 
 	body {
-		font-size: 11vw;
+		font-size: 9vw;
 	}
 
 }
 
-@media only screen and (min-width: 1080px) and (max-width: 1599px) {
+#nav__container
 
-	body {
-		font-size: 5.5vw;
-	}
-
-}
-
-@media only screen and (min-width: 1600px) {
-
-	body {
-		font-size: 5.25vw;
-	}
-
-}
 
 
 .title_under {
@@ -1209,22 +1207,40 @@ a:hover {
 @media screen and (max-width:900px) {
     #projectTop {
         width: auto;
-        margin-top: 130px;
         padding: 0 35px;
-        margin-left: 0;
+		margin-left: 0;
+		margin-top: 130px;
+
     }
 }
 #projectCredit {
     font-size: 19px;
     color: #000;
-    margin-top: 60px;
+    margin-top: 40px;
     font-weight: normal;
 }
 @media screen and (max-width:900px) {
     #projectCredit {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
+
+#about_crd {
+    font-size: 19px;
+    color: #000;
+    margin-top: 20px;
+	font-weight: normal;
+
+
+}
+@media screen and (max-width:900px) {
+    #about_crd {
+		margin-top: 10px;
+		display: inline-block;
+
+    }
+}
+
 #projectCredit .creditTitle {
     text-transform: capitalize;
     margin-bottom: 10px;
@@ -1232,13 +1248,35 @@ a:hover {
     color: #000;
 }
 .creditCol {
-    display: inline-block;
     margin-bottom: 100px;
     text-transform: uppercase;
 }
 .creditCol+.creditCol {
     margin-left: 100px;
 }
+
+.creditCol {
+    margin-bottom: 100px;
+    text-transform: uppercase;
+}
+
+.contclumn{
+	float: left;
+	width: 100%;
+}
+
+.clumn {
+	float: left;
+	width: 25%;
+}
+@media screen and (max-width:900px) {
+    .clumn {
+		width: 100%;
+
+    }
+}
+
+
 
 .button.projectLink {
     margin: 30px 0;
@@ -1257,18 +1295,17 @@ a:hover {
 }
 .page.project h1 {
     font-size: 50px;
-	font-family: international;
+	font-family: 'akzidenz_ex_bold';
 	text-transform: uppercase;
     text-align: left!important;
     color: #000;
-    letter-spacing: 0;
+	letter-spacing: 0;
     margin-bottom: 0;
 }
 @media screen and (max-width:900px) {
     .page.project h1 {
         margin-top: 0;
         font-size: 35px;
-        font-weight: 700;
 
     }
 }
@@ -1349,6 +1386,24 @@ a:hover {
     }
 }
 
+.aboutCopy {
+    display: block;
+    color: #000;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+@media screen and (max-width:900px) {
+    .aboutCopy {
+        font-size: 20px;
+        line-height: 1.06;
+        width: auto;
+        padding: 0;
+    }
+}
+
 .slideshow {
     white-space: nowrap;
     font-size: 0;
@@ -1409,14 +1464,14 @@ a:hover {
 }
 #projectNext,
 #projectPrev {
-    color: #e1d;
+    color: #000;
     font-size: 4vw;
     display: block;
     width: 50%;
     position: relative;
     max-width: 1300px;
     margin: auto;
-    padding: 0 100px;
+    padding: 0 20px;
 }
 #projectNext a,
 #projectNext span,
@@ -1525,3 +1580,32 @@ a:hover {
     background-color: #fff;
     color: #000;
 }
+
+#boxes{
+	display: inline;
+	width: 100%;
+}
+
+#cont11{ 
+	float:left;  
+	width:30%; 
+} 
+#cont12{ 
+	float:right;  
+	width:65%; 
+} 
+
+@media screen and (max-width:900px) {
+    #cont11  {
+		width:100%; 
+	}
+	#cont12  {
+		width:100%; 
+    }
+}
+
+#touch{
+	font-size: 30px;
+	min-width: 300px;
+}
+
