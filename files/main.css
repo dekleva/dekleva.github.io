@@ -64,7 +64,7 @@ b {
 }
 #nav__container a {
 	text-decoration: none;
-	-webkit-text-stroke: 2px rgb(0,0,0);
+	-webkit-text-stroke: 1px rgb(0,0,0);
 	padding-left: .1em;
 	padding-right: .1em;
 }
@@ -237,7 +237,7 @@ canvas {
 
 .box__work_label_white {
 	position: absolute;
-	-webkit-text-stroke: 2px #F1ECE8;
+	-webkit-text-stroke: 1px #F1ECE8;
 	color: transparent;
 	z-index: 50;
 	width: 100%;
@@ -245,13 +245,13 @@ canvas {
 	top: 50%;
 	transform: translateY(-50%);
 	text-transform: uppercase;
-	text-shadow: 0px 0px 10px grey;
+	text-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
 	
 }
 
 .box__work_label_black {
 	position: absolute;
-	-webkit-text-stroke: 2px #F1ECE8;
+	-webkit-text-stroke: 1px #F1ECE8;
 	color: transparent;
 	z-index: 50;
 	pointer-events: none;
